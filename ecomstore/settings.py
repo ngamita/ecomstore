@@ -96,7 +96,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'djangodblog.DBLogMiddleware',
+    'djangodblog.middleware.DBLogMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -107,6 +107,7 @@ ROOT_URLCONF = 'ecomstore.urls'
 WSGI_APPLICATION = 'ecomstore.wsgi.application'
 
 TEMPLATE_DIRS = (
+    "/home/ngamita/code-2012/ecomstore/templates",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
